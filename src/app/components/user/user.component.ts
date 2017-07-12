@@ -16,9 +16,9 @@ export class UserComponent implements OnInit {
   posts:Post[];
   isEdit:boolean = false;
 
-  constructor(private dataService:DataService) { 
+  constructor(private dataService:DataService) {
     console.log('constructor ran..');
-    
+
   }
 
   ngOnInit() {
@@ -52,12 +52,8 @@ export class UserComponent implements OnInit {
     return false;
   }
 
-  deleteHobby(hobby){
-    for(let i = 0;i <this.hobbies.length;i++){
-      if(this.hobbies[i] == hobby){
-        this.hobbies.splice(i, 1);
-      }
-    }
+  deleteHobby(i){
+    this.hobbies.splice(i, 1);
   }
 
   toggleEdit(){
