@@ -47,7 +47,7 @@
 </form>
 <ul>
   <li *ngFor="let hobby of hobbies; let i = index">
-    {{i + 1}}: {{hobby}} <button (click)="deleteHobby(hobby)">X</button>
+    {{i + 1}}: {{hobby}} <button (click)="deleteHobby(i)">X</button>
   </li>
 </ul>
 
