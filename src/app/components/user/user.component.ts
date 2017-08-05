@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
+import { Post } from '../../interfaces/post';
 
 @Component({
   selector: 'app-user',
@@ -67,11 +68,4 @@ interface Address{
   street:string,
   city:string,
   state:string
-}
-
-interface Post{
-  id: number,
-  title:string,
-  body:string,
-  userId:number
 }
